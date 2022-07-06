@@ -18,8 +18,8 @@ public class Quadratic {
         int c = sc.nextInt();
 
         int delta = b*b - 4*a*c;
-        double root1 = (-b + Math.pow(delta,0.5))/(2*a);
-        double root2 = (-b - Math.pow(delta,0.5))/(2*a);
+        double root1 = (-b + Math.sqrt(delta))/(2*a);
+        double root2 = (-b - Math.sqrt(delta))/(2*a);
 
         System.out.println("The Quadratic roots of equation "+a+"(x^2) +"+b+"(x) +"+c+" are : " + root1 +" and "+root2);
 
