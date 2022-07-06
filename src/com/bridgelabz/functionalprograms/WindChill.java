@@ -9,6 +9,12 @@ public class WindChill {
         int v = Integer.parseInt(args[1]);
         System.out.println("Wind Speed is :"+v+" miles per hour");
 
+        windChillCalculator(t,v);
+
+    }
+
+    private static void windChillCalculator(int t, int v) {
+
         if((Math.abs(t)>50) || (v>120) || (v<3)) {
             System.out.println("Formula is only valid if F (absolute value) is below 50 degrees Fahrenheit ");
             System.out.println("or V is between 3 and 120 mph!");
@@ -19,5 +25,6 @@ public class WindChill {
 
             System.out.println("The Wind Chill temperature is: " + w + " degrees Fahrenheit");
         }
+
     }
 }
